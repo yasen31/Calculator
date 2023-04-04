@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body, 
+html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body, 
+button {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffff;
+}
+/* Main calculator container */
+.calculator-container {
+    background-color: #051d69;
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/*Calculator dsiplay section*/
+.display-box {
+    background-color: #051d69;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.display-number {
+    font-size: 3em;
+}
+
+/*Calculator number section */
+.number-buttons-container {
+    box-sizing: border-box;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 3px;
+}
+.btn-devide, 
+.btn-multiply, 
+.btn-subtract, 
+.btn-add {
+    grid-column-start: 4;
+}
+.btn-devide {
+    grid-row-start: 1;
+}
+.btn-multiply {
+    grid-row-start: 2;
+}
+.btn-subtract {
+    grid-row-start: 3;
+}
+.btn-add {
+    grid-row-start: 4;
+}
+.btn-zero {
+    grid-column-start: span 2;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #529ac7;
+    cursor: pointer;
+}

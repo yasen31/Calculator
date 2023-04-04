@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
     <div class="calculator-container">
         <div class="display-box">
-            <div class="display-number"></div>
+            <div class="display-number">5</div>
         </div>
         <div class="number-buttons-container">
             <button data-clear>AC</button>
             <button data-change-sign>+/-</button>
             <button data-percent>%</button>
-            <button data-operator>/</button>
-            <button data-operator>*</button>
-            <button data-operator>-</button>
-            <button data-operator>+</button>
             <button data-number>1</button>
             <button data-number>2</button>
             <button data-number>3</button>
@@ -28,7 +25,11 @@
             <button data-number>7</button>
             <button data-number>8</button>
             <button data-number>9</button>
-            <button data-number>0</button>
+            <button data-number class="btn-zero">0</button>
+            <button data-operator class="btn-devide">/</button>
+            <button data-operator class="btn-multiply">*</button>
+            <button data-operator class="btn-subtract">-</button>
+            <button data-operator class="btn-add">+</button>
             <button data-number>.</button>
             <button data-equals>=</button>
         </div>
