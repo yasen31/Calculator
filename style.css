@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body, 
 html {
     padding: 0;
@@ -21,6 +22,7 @@ button {
     height: 450px;
     width: 350px;
     border-radius: 10px;
+    border: 12px solid #0a2099;
 }
 
 /*Calculator dsiplay section*/
@@ -33,7 +35,7 @@ button {
     border-radius: 10px 10px 0px 0px;
 }
 .display-number {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /*Calculator number section */
@@ -45,13 +47,39 @@ button {
     gap: 2px;
     padding: 3px;
 }
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #529ac7;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(117, 199, 250);
+}
+
+
+.btn-equals, 
+.btn-clear, 
+.btn-zero {
+    grid-column-start: span 2;
+}
+
+.btn-dot {
+    grid-column-start: 3;
+}
+
 .btn-devide, 
 .btn-multiply, 
 .btn-subtract, 
 .btn-add {
     grid-column-start: 4;
 }
-.btn-devide {
+
+.btn-devide,  
+.btn-clear, 
+.btn-dot {
     grid-row-start: 1;
 }
 .btn-multiply {
@@ -62,14 +90,4 @@ button {
 }
 .btn-add {
     grid-row-start: 4;
-}
-.btn-zero {
-    grid-column-start: span 2;
-}
-
-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #529ac7;
-    cursor: pointer;
 }
